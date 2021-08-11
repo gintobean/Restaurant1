@@ -40,7 +40,7 @@ gsap.from(".veg", {
   duration:1
 });
 
-gsap.from(".bg2", {
+gsap.fromTo(".bg2", {
   scrollTrigger:
   {
     trigger: "#menu",
@@ -51,6 +51,9 @@ gsap.from(".bg2", {
   },
   y:-400,
   duration:3
+},
+{
+  y:0
 });
 
 gsap.from("#testemonials", {

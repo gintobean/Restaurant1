@@ -1,6 +1,7 @@
 body {
   font-family: 'Libre Baskerville', serif;
   background-color: black;
+  color:#EEEEEE;
 }
 
 /* navbar */
@@ -17,4 +18,30 @@ body {
 .nav-item {
   padding: 0 18px;
   font-size: 1.5rem;
+}
+
+#meat-menu, #veg-menu {
+  padding: 5% 0;
+  text-align: center;
+}
+
+.section-title {
+  margin: 5% 0;
+  font-size: 3rem;
+}
+
+.row {
+  margin: 5% 5%;
+  display: flex;
+}
+
+
+.underline {
+  border-bottom: 2px solid currentColor;
+  width: 80%;
+  line-height:3;
+}
+
+.veg-menu {
+  margin: 15% 0;
 }
