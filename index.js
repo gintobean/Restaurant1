@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 //Starting animations
 
 gsap.from('.navbar', {opacity:0,duration:1});
-gsap.from('#top', {opacity:0,duration:1});
+gsap.from('.bg', {opacity:0,duration:1});
 gsap.from('.title-content', {opacity:0,duration:1,y:-50});
 gsap.from('.menu-cont', {duration:1,y:50});
 

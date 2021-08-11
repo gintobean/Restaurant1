@@ -12,7 +12,7 @@ body {
 /* navbar */
 .navbar {
   background-color: #EEEEEE;
-  position: static;
+  position: relative;
   padding: 10px 10px;
 
 }
@@ -27,15 +27,18 @@ body {
 
 /* Title */
 
+.bg {
+  width: 100%;
+  min-height: 1025px;
+  position: absolute;
+  object-fit: cover;
+}
+
 #top {
-  background-image: url("images/med2.png");
   background-color: #2B2B2B;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   z-index: -2;
   padding: 5% 0;
-  min-height:950px;
+  min-height: 952px;
 }
 
 .title-content {
@@ -97,10 +100,10 @@ body {
 /* testemonial */
 
 .bg2{
+  object-fit: cover;
   width: 100%;
   position: relative;
   z-index:-1;
-  max-height: 100vh;
 }
 
 .decor {
