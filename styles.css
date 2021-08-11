@@ -28,15 +28,17 @@ body {
 /* Title */
 
 .bg {
+  background-color: #2b2b2b;
+  z-index: -2;
   width: 100%;
   min-height: 1025px;
-  position: absolute;
+  position: fixed;
   object-fit: cover;
 }
 
 #top {
-  background-color: #2B2B2B;
-  z-index: -2;
+
+  z-index: -1;
   padding: 5% 0;
   min-height: 952px;
 }
