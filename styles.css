@@ -1,0 +1,132 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  background-color: black;
+}
+
+/* general */
+.section-title, .title2{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* navbar */
+.navbar {
+  background-color: #EEEEEE;
+  position: static;
+  padding: 10px 10px;
+
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+}
+.nav-item {
+  padding: 0 18px;
+  font-size: 1.5rem;
+}
+
+/* Title */
+
+#top {
+  background-image: url("images/med2.png");
+  background-color: #2B2B2B;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  padding: 5% 0;
+  min-height:950px;
+}
+
+.title-content {
+  text-align: center;
+  color: #EEEEEE;
+}
+
+.big-title {
+  font-weight: 500;
+  font-size: 4rem;
+  display:block;
+  margin: 75px 100px;
+}
+
+.sub-title {
+  font-size: 2rem;
+  display: block;
+  margin: 0 100px;
+}
+
+.cta {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 2% 2%;
+  margin: 50px 100px;
+  justify-content: center;
+}
+
+.contact-info {
+  margin-top: 80px;
+  font-size: 1.5rem;
+}
+
+/* Menu */
+
+#menu, #testemonials, #footer {
+  background-color: #000;
+  padding: 10% 5%;
+  color: #EEEEEE;
+}
+
+.menu-row {
+  margin: 50px auto;
+}
+
+.menu-pic {
+  position: relative;
+  width: 80%;
+  margin: 10% 2%;
+  left: 10%;
+  border-radius: 1%;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+/* testemonial */
+
+.bg2, .decor {
+  width: 100%;
+  position: relative;
+  z-index:-1;
+}
+
+.testemonial-body {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 5% auto;
+}
+
+.yelp {
+  margin: 10% auto;
+}
+
+.yelp-review {
+  margin: 5% auto;
+}
+
+/* footer */
+.footer-box {
+  text-align: center;
+}
+
+.title3 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin: 50px 20px;
+}

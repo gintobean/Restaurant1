@@ -1,0 +1,20 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  background-color: black;
+}
+
+/* navbar */
+.navbar {
+  background-color: #EEEEEE;
+  position: static;
+  padding: 10px 10px;
+
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+}
+.nav-item {
+  padding: 0 18px;
+  font-size: 1.5rem;
+}
