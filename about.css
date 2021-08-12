@@ -103,3 +103,45 @@ body {
   background-color: black;
   opacity: 0.0;
 }
+
+@media (max-width: 750px) {
+  .navbar-brand {
+    font-size: 3.3rem;
+  }
+
+  .nav-item {
+    padding: 0 18px;
+    font-size: 3rem;
+  }
+
+  .bordered {
+      border-top: 3px #eeeeee solid;
+      border-bottom: 3px #eeeeee solid;
+  }
+
+  .section-heading, .section-heading2 {
+    font-size: 3.5rem;
+    margin: 4% 0% 20%;
+  }
+
+  .about-text, .about-text2 {
+    font-size: 2.5rem;
+    line-height: 2;
+  }
+
+  .title3 {
+    font-size: 4.5rem;
+  }
+
+  .social-icon {
+    font-size: 3rem;
+  }
+
+  .copyright {
+    font-size: 1.9rem;
+  }
+
+  .transparent {
+    height: 60vh;
+  }
+}

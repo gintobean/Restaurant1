@@ -158,9 +158,6 @@ body {
   color: #EEEEEE;
   background-color: #2d2424;
   z-index: -3;
-}
-
-.footer-box {
   text-align: center;
 }
 
@@ -172,4 +169,69 @@ body {
 .social-icon {
   font-size: 2rem;
   margin: 50px 20px;
+}
+
+@media (max-width: 750px) {
+  .navbar-brand {
+    font-size: 3.3rem;
+  }
+
+  .nav-item {
+    padding: 0 18px;
+    font-size: 3rem;
+  }
+
+  .section-title, .title2 {
+    font-size: 5rem;
+  }
+  .big-title {
+    font-weight: 500;
+    font-size: 4.5rem;
+    display: block;
+    margin: 20% 13%;
+  }
+  .sub-title {
+
+    font-size: 4rem;
+    display: block;
+    margin: 5% 13%;
+  }
+
+  .contact-info {
+    font-size: 2.6rem;
+    margin-top: 20%;
+  }
+
+  .bordered {
+    border-top: 3px #eeeeee solid;
+    border-bottom: 3px #eeeeee solid;
+  }
+
+  .cta {
+    font-size: 3.2rem;
+    padding: 4% 4%;
+    margin: 10% 16%;
+  }
+
+  .name {
+    font-size: 3.4rem;
+  }
+
+  .testemonial-body {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10% auto;
+  }
+
+  .title3 {
+    font-size: 4.5rem;
+  }
+
+  .social-icon {
+    font-size: 3rem;
+  }
+
+  .copyright {
+    font-size: 1.9rem;
+  }
 }
