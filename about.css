@@ -1,0 +1,92 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  background-color: #2d2424;
+  color:#EEEEEE;
+}
+
+/* navbar */
+.navbar {
+  background-color: #EEEEEE;
+  position: static;
+  padding: 10px 10px;
+
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+}
+.nav-item {
+  padding: 0 18px;
+  font-size: 1.5rem;
+}
+
+.restaurant-pic {
+  position: relative;
+  z-index: -1;
+  object-fit: cover;
+  width: 130%;
+  height: 100vh;
+  top: 400px;
+}
+
+.content, .mission {
+  background-color: #000;
+  text-align: center;
+  padding: 10% 10%;
+}
+
+.bordered {
+    border-top: 2px #eeeeee solid;
+    border-bottom: 2px #eeeeee solid;
+}
+
+.section-heading, .section-heading2 {
+  font-size: 2rem;
+  margin: 2% 0% 10%;
+}
+
+.about-text, .about-text2 {
+  font-size: 1.4rem;
+}
+
+.mission-pic {
+  position: relative;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  top: 250px;
+}
+
+/* Footer */
+
+#footer {
+  z-index: -2;
+  width: 100%;
+  position: fixed;
+  background-color: #2D2424;
+  padding: 10% 5% 9%;
+  color: #EEEEEE;
+  bottom: 0px;
+}
+.footer-box {
+  text-align: center;
+}
+
+.title3 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin: 50px 20px;
+}
+
+.transparent {
+  position: relative;
+  bottom: -40px;
+  height: 50vh;
+  background-color: black;
+  opacity: 0.0;
+}

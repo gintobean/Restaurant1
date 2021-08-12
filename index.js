@@ -40,32 +40,16 @@ gsap.from(".veg", {
   duration:1
 });
 
-gsap.fromTo(".bg2", {
+gsap.from(".bg2", {ease:"none",
   scrollTrigger:
   {
     trigger: "#menu",
     start:"bottom bottom",
-    endTrigger: ".bg2",
-    end: "bottom top",
+    endTrigger: "#testemonials",
+    end: "top top",
     scrub: true
   },
-  y:-400,
-  duration:3
-},
-{
-  y:0
-});
-
-gsap.from("#testemonials", {
-  scrollTrigger:
-  {
-    trigger: "#testemonials",
-    start:"top bottom",
-    end: "bottom bottom",
-    scrub: true
-  },
-  y:-400,
-  duration:3
+  y:-600
 });
 
 gsap.from(".title2, .testemonial-body",{
@@ -87,7 +71,7 @@ gsap.from(".decor", {
     end: "bottom bottom",
     scrub: true
   },
-  y:-400,
+  y:-600,
   duration:2
 });
 
@@ -99,17 +83,6 @@ gsap.from(".footer-box",{
   },
   opacity:0,
   duration:2
-});
-
-gsap.from("#footer",{
-  scrollTrigger:
-  {
-    trigger: "#footer",
-    start: "top bottom",
-    scrub: true
-  },
-  y:-400,
-  duration:3
 });
 
 //Review Timeline
