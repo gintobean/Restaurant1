@@ -6,7 +6,7 @@ body {
 /* general */
 .section-title, .title2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .bordered {
@@ -36,7 +36,7 @@ body {
   background-color: #000000;
   z-index: -100;
   width: 100%;
-  min-height: 1025px;
+  min-height: 100vh;
   position: fixed;
   object-fit: cover;
 }
@@ -56,25 +56,25 @@ body {
   font-weight: 500;
   font-size: 4rem;
   display: block;
-  margin: 75px 100px;
+  margin: 10% 13%;
 }
 
 .sub-title {
   font-size: 2rem;
   display: block;
-  margin: 0 100px;
+  margin: 1% 13%;
 }
 
 .cta {
   display: inline-block;
   font-size: 1.8rem;
   padding: 2% 2%;
-  margin: 50px 100px;
+  margin: 7% 13%;
   justify-content: center;
 }
 
 .contact-info {
-  margin-top: 80px;
+  margin-top: 11%;
   font-size: 1.5rem;
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 .menu-row {
-  margin: 50px auto;
+  margin: 8% auto;
 }
 
 .menu-pic {
