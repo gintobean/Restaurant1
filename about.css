@@ -25,9 +25,10 @@ body {
   position: relative;
   z-index: -1;
   object-fit: cover;
-  width: 130%;
+  width:100%;
+  transform:scale(1.3);
   height: 100vh;
-  top: 400px;
+  top: 330px;
 }
 
 .content, .mission {
@@ -56,7 +57,7 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100vh;
-  top: 250px;
+  top: 230px;
   overflow: hidden;
 }
 
@@ -67,9 +68,9 @@ body {
   width: 100%;
   position: fixed;
   background-color: #2D2424;
-  padding: 10% 5% 9%;
+  padding: 0 5% 85px;
   color: #EEEEEE;
-  bottom: 0px;
+  bottom: 0;
 }
 .footer-box {
   text-align: center;
@@ -88,7 +89,7 @@ body {
 .transparent {
   position: relative;
   bottom: -40px;
-  height: 50vh;
+  height: 400px;
   background-color: black;
   opacity: 0.0;
 }

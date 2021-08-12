@@ -62,7 +62,7 @@ gsap.from(".title2, .testemonial-body",{
   duration:2
 });
 
-gsap.from(".decor", {
+gsap.from(".decor", {ease: "none",
   scrollTrigger:
   {
     trigger: "#testemonials",
