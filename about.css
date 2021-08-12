@@ -20,15 +20,19 @@ body {
   font-size: 1.5rem;
 }
 
-.restaurant-pic {
+.restaurant-wrapper {
   overflow: hidden;
   position: relative;
   z-index: -1;
-  object-fit: cover;
-  transform:scale(1.3);
-  width:100%;
+  width: 100%;
   height: 100vh;
-  top: 330px;
+  top: 400px;
+}
+
+.restaurant-pic {
+  object-fit: cover;
+  width: 100%; height: 100vh;
+  transform:scale(1.3);
 }
 
 .content, .mission {
@@ -51,14 +55,18 @@ body {
   font-size: 1.4rem;
 }
 
-.mission-pic {
+.mission-wrapper {
   position: relative;
   z-index: -1;
-  object-fit: cover;
   width: 100%;
   height: 100vh;
   top: 230px;
   overflow: hidden;
+}
+
+.mission-pic {
+  object-fit: cover;
+  width: 100%; height: 100vh;
 }
 
 /* Footer */

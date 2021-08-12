@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.from('.navbar', {opacity:0,duration:1.5});
 
-gsap.from(".restaurant-pic", {ease: "none", scrollTrigger: {
+gsap.from(".restaurant-wrapper", {ease: "none", scrollTrigger: {
   trigger: ".content",
   start: "top bottom",
   scrub: true,
@@ -10,7 +10,7 @@ gsap.from(".restaurant-pic", {ease: "none", scrollTrigger: {
 y:-400
 });
 
-gsap.from(".mission-pic", {ease: "none", scrollTrigger: {
+gsap.from(".mission-wrapper", {ease: "none", scrollTrigger: {
   trigger: ".content",
   start: "bottom bottom",
   scrub: true,
@@ -21,7 +21,7 @@ y:-500
 });
 
 //Text fading
-gsap.from(".restaurant-pic",{
+gsap.from(".restaurant-wrapper",{
   ease:"none",
   opacity: 0,
   duration:1.5
@@ -31,7 +31,7 @@ gsap.from("#footer",{
   scrollTrigger:
   {
     trigger: ".mission",
-    toggleActions: "restart pause resume pause",
+    toggleActions: "restart pause resume reverse",
     start: "bottom bottom"
   },
   opacity:0,

@@ -40,7 +40,7 @@ gsap.from(".veg", {
   duration:1
 });
 
-gsap.from(".bg2", {ease:"none",
+gsap.from(".bg2-wrapper", {ease:"none",
   scrollTrigger:
   {
     trigger: "#menu",
@@ -62,7 +62,7 @@ gsap.from(".title2, .testemonial-body",{
   duration:2
 });
 
-gsap.from(".decor", {ease: "none",
+gsap.from(".decor-wrapper", {ease: "none",
   scrollTrigger:
   {
     trigger: "#testemonials",
