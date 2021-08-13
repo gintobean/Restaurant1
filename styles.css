@@ -106,9 +106,10 @@ body {
 .bg2-wrapper {
   width: 100%;
   height: 100vh;
-  top: 34vh;
+  top: 32vh;
   position: relative;
   z-index: -1;
+  overflow-x: hidden;
 }
 
 .bg2 {
@@ -118,18 +119,19 @@ body {
 }
 
 .decor-wrapper {
-  display: inline-block;
   width: 100%;
   height: 100vh;
-  top: 20vh;
+  top: 15vh;
   position: relative;
   z-index: -1;
+  overflow-x: hidden;
 }
 
 .decor {
   object-fit: cover;
-  width: 100%; height: 100vh;
-  transform: scale(1.5);
+  width: 100%;
+  height: 100vh;
+  transform: scale(1.2);
 }
 
 .testemonial-body {
@@ -168,67 +170,56 @@ body {
   margin: 50px 20px;
 }
 
-/* @media (max-width: 900px) {
+@media (max-width: 700px) {
   .navbar-brand {
-    font-size: 3.3rem;
+    font-size: 1.5rem;
   }
 
   .nav-item {
     padding: 0 18px;
-    font-size: 3rem;
+    font-size: 1.3rem;
   }
 
   .section-title, .title2 {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .big-title {
     font-weight: 500;
-    font-size: 4.5rem;
+    font-size: 3.3rem;
     display: block;
-    margin: 20% 13%;
   }
   .sub-title {
 
-    font-size: 4rem;
+    font-size: 1.9rem;
     display: block;
-    margin: 5% 13%;
   }
 
   .contact-info {
-    font-size: 2.6rem;
-    margin-top: 20%;
-  }
-
-  .bordered {
-    border-top: 3px #eeeeee solid;
-    border-bottom: 3px #eeeeee solid;
+    font-size: 1.5rem;
   }
 
   .cta {
-    font-size: 3.2rem;
-    padding: 4% 4%;
-    margin: 10% 16%;
+    font-size: 1.5rem;
+    padding:4% 4%;
   }
 
   .name {
-    font-size: 3.4rem;
+    font-size: 2rem;
   }
 
   .testemonial-body {
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 10% auto;
+    font-size: 1.4rem;
   }
 
   .title3 {
-    font-size: 4.5rem;
+    font-size: 2.7rem;
   }
 
   .social-icon {
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
 
   .copyright {
-    font-size: 1.9rem;
+    font-size: 1rem;
   }
-} */
+}

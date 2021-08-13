@@ -25,7 +25,8 @@ body {
   z-index: -1;
   width: 100%;
   height: 100vh;
-  top: 46vh;
+  top: 42.5vh;
+  overflow-x: hidden;
 }
 
 .restaurant-pic {
@@ -61,7 +62,8 @@ body {
   z-index: -1;
   width: 100%;
   height: 100vh;
-  top: 28vh;
+  top: 26.9vh;
+  overflow-x: hidden;
 }
 
 .mission-pic {
@@ -97,7 +99,7 @@ body {
 .transparent {
   position: relative;
   bottom: -40px;
-  height: 400px;
+  height: 45vh;
   background-color: black;
   opacity: 0.0;
 }
