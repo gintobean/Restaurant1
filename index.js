@@ -8,6 +8,16 @@ gsap.from('.title-content', {opacity:0,duration:1,y:-50});
 gsap.from('.menu-cont', {duration:1,y:50});
 
 //scrolling animations
+gsap.to(".bg", {
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".bg2",
+    start: "bottom bottom",
+    toggleActions: "restart pause resume reverse"
+  },
+  visibility: 'hidden'
+});
+
 gsap.from(".section-title, .name",{
   scrollTrigger:
   {
@@ -40,6 +50,7 @@ gsap.from(".veg", {
   duration:1
 });
 
+$(".bg2-wrapper").css('transform','translate(0,25vh)');
 gsap.from(".bg2-wrapper", {ease:"none",
   scrollTrigger:
   {
@@ -49,7 +60,7 @@ gsap.from(".bg2-wrapper", {ease:"none",
     end: "top top",
     scrub: true
   },
-  y:-600
+  y:"-50vh"
 });
 
 gsap.from(".title2, .testemonial-body",{
@@ -62,17 +73,18 @@ gsap.from(".title2, .testemonial-body",{
   duration:2
 });
 
+$(".decor-wrapper").css('transform','translate(0,25vh)');
 gsap.from(".decor-wrapper", {ease: "none",
   scrollTrigger:
   {
+
     trigger: "#testemonials",
     start:"bottom bottom",
     endTrigger:"#footer",
     end: "bottom bottom",
-    scrub: true
+    scrub: true,
   },
-  y:-600,
-  duration:2
+  y:"-50vh"
 });
 
 gsap.from(".footer-box",{
