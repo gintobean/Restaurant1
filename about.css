@@ -26,7 +26,7 @@ body {
   width: 100%;
   height: 100vh;
   top: 42.5vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .restaurant-pic {
@@ -63,7 +63,7 @@ body {
   width: 100%;
   height: 100vh;
   top: 26.9vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .mission-pic {
