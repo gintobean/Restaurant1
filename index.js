@@ -2,11 +2,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 //media queries
 if ($(window).width() < 700) {
-    $('.navbar-brand').addClass('mx-auto');
+    $('.navbar-brand, .nav-item').addClass('mx-auto');
 }
 else {
-    $('.navbar-brand').removeClass('mx-auto');
+    $('.navbar-brand, .nav-item').removeClass('mx-auto');
 }
+
+// var scrollAmount = Math.floor($(this).scrollTop() / 934);
+// $(window).scroll(function() {
+//   console.log(scrollAmount);
+//   if (scrollAmount > 2) {
+//     $('.bg').css("visibility", "hidden");
+//   }
+//   else {
+//     $('.bg').css("visibility ", "visible");
+//   }
+// });
 
 //Starting animations
 
@@ -17,7 +28,6 @@ gsap.from('.menu-cont', {duration:1,y:50});
 
 //scrolling animations
 gsap.to(".bg", {
-  ease: "none",
   scrollTrigger: {
     trigger: ".bg2",
     start: "bottom bottom",
@@ -81,7 +91,6 @@ gsap.from(".title2, .testemonial-body",{
   duration:2
 });
 
-$(".decor-wrapper").css('transform','translate(0,25vh)');
 gsap.from(".decor-wrapper", {ease: "none",
   scrollTrigger:
   {

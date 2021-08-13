@@ -32,13 +32,19 @@ body {
 }
 
 /* Title */
-.bg {
+.bg-wrapper {
   z-index: -100;
   width: 100%;
   min-height: 100vh;
   position: fixed;
-  object-fit: cover;
   overflow:hidden;
+}
+
+.bg {
+  visibility: visible;
+  object-fit: cover;
+  width: 100%;
+  min-height: 100vh
 }
 
 #top {
@@ -107,7 +113,7 @@ body {
 .bg2-wrapper {
   width: 100%;
   height: 100vh;
-  top: 12vh;
+  top: 12.5vh;
   position: relative;
   z-index: -1;
   overflow: hidden;
@@ -116,15 +122,14 @@ body {
 .bg2 {
   object-fit: cover;
   width: 100%; height: 100vh;
-  transform: scale(1.3);
 }
 
 .decor-wrapper {
   width: 100%;
   height: 100vh;
   position: relative;
-  top: -3vh;
   z-index: -1;
+  top:13vh;
   overflow: hidden;
 }
 
@@ -132,7 +137,6 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100vh;
-  transform: scale(1.1);
 }
 
 .testemonial-body {
@@ -179,7 +183,7 @@ body {
   }
 
   .navbar-brand {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .nav-item {
@@ -188,7 +192,7 @@ body {
   }
 
   .section-title, .title2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .big-title {

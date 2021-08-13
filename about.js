@@ -1,6 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.from('.navbar', {opacity:0,duration:1.5});
 
+//media queries
+if ($(window).width() < 700) {
+    $('.navbar-brand, .nav-item').addClass('mx-auto');
+}
+else {
+    $('.navbar-brand, .nav-item').removeClass('mx-auto');
+}
+
+//PARALLAX
+
 gsap.from(".restaurant-wrapper", {ease: "none", scrollTrigger: {
   trigger: ".content",
   start: "top bottom",
@@ -10,7 +20,6 @@ gsap.from(".restaurant-wrapper", {ease: "none", scrollTrigger: {
 y:"-42.5vh"
 });
 
-$(".mission-wrapper").css('transform','translate(0,50vh)');
 gsap.from(".mission-wrapper", {ease: "none", scrollTrigger: {
   trigger: ".content",
   start: "bottom bottom",
