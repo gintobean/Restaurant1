@@ -1,5 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
+//media queries
+if ($(window).width() < 700) {
+    $('.navbar-brand').addClass('mx-auto');
+}
+else {
+    $('.navbar-brand').removeClass('mx-auto');
+}
+
 //Starting animations
 
 gsap.from('.navbar', {opacity:0,duration:1});

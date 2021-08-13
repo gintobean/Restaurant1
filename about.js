@@ -7,9 +7,10 @@ gsap.from(".restaurant-wrapper", {ease: "none", scrollTrigger: {
   scrub: true,
   end: "top top"
 },
-y:-400
+y:"-42.5vh"
 });
 
+$(".mission-wrapper").css('transform','translate(0,50vh)');
 gsap.from(".mission-wrapper", {ease: "none", scrollTrigger: {
   trigger: ".content",
   start: "bottom bottom",
@@ -17,7 +18,7 @@ gsap.from(".mission-wrapper", {ease: "none", scrollTrigger: {
   endTrigger: ".mission",
   end: "top top"
 },
-y:-500
+y:"-50vh"
 });
 
 //Text fading
