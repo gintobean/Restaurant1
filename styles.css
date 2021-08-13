@@ -10,25 +10,48 @@ body {
 }
 
 .bordered {
-  border-top: 2px #eeeeee solid;
-  border-bottom: 2px #eeeeee solid;
+  border-top: 2px #F5E6CA solid;
+  border-bottom: 2px #F5E6CA solid;
+}
+
+.bordered-image {
+  border-radius: 2%;
+  border: 2px solid #F5E6CA;
 }
 
 /* navbar */
 .navbar {
-  background-color: #EEEEEE;
+  background-color: #2d2424;
   position: relative;
   padding: 10px 10px;
   min-height: 9vh;
 }
 
-.navbar-brand {
+.navbar-light .navbar-brand {
   font-size: 1.7rem;
+  color: #eeeeee;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #f5e6ca;
 }
 
 .nav-item {
   padding: 0 18px;
   font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #F5E6CA !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  color: #f5e6ca;
+}
+
+.navbar-bar {
+  color: #f5e6ca;
 }
 
 /* Title */
@@ -85,10 +108,10 @@ body {
 }
 
 /* Menu */
-#menu, #testemonials {
-  background-color: #000;
+#menu, #testemonials, #hours {
+  background-color: #2D2424;
   padding: 10% 5%;
-  color: #EEEEEE;
+  color: #eeeeee;
   min-height: 100vh;
 }
 
@@ -109,11 +132,59 @@ body {
   font-size: 2.4rem;
 }
 
+/* hours */
+
+.hours-wrapper {
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.sub-heading {
+  margin: 10% 0;
+  font-weight: bold;
+}
+
+.photo {
+  margin-top: 100px;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.restaurant-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-link {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+.location-icon {
+  color: #CD113B;
+}
+
+.bg3-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 25vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg3 {
+  object-fit: cover;
+  width: 100%; height: 100vh;
+}
+
 /* testemonial */
 .bg2-wrapper {
   width: 100%;
   height: 100vh;
-  top: 12.5vh;
+  top: 25vh;
   position: relative;
   z-index: -1;
   overflow: hidden;
@@ -129,7 +200,7 @@ body {
   height: 100vh;
   position: relative;
   z-index: -1;
-  top:13vh;
+  top: 12.5vh;
   overflow: hidden;
 }
 
@@ -153,7 +224,6 @@ body {
   display: flex;
   width: 80%;
   margin: 5% auto;
-  border-radius: 2%;
 }
 
 /* footer */
@@ -171,8 +241,13 @@ body {
 }
 
 .social-icon {
+  color: #eeeeee;
   font-size: 2rem;
   margin: 50px 20px;
+}
+
+.social-icon:hover {
+  color: #f5e6ca;
 }
 
 @media (max-width: 700px) {

@@ -4,20 +4,49 @@ body {
   color:#EEEEEE;
 }
 
+.bordered {
+  border-top: 2px #F5E6CA solid;
+  border-bottom: 2px #F5E6CA solid;
+}
+
+.bordered-image {
+  border-radius: 2%;
+  border: 2px solid #F5E6CA;
+}
+
 /* navbar */
 .navbar {
-  background-color: #EEEEEE;
-  position: static;
+  background-color: #2d2424;
+  position: relative;
   padding: 10px 10px;
   min-height: 9vh;
 }
 
-.navbar-brand {
+.navbar-light .navbar-brand {
   font-size: 1.7rem;
+  color: #eeeeee;
 }
+
+.navbar-light .navbar-brand:hover {
+  color: #f5e6ca;
+}
+
 .nav-item {
   padding: 0 18px;
   font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #F5E6CA !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  color: #f5e6ca;
+}
+
+.navbar-bar {
+  color: #f5e6ca;
 }
 
 #meat-menu, #veg-menu {
@@ -96,11 +125,11 @@ body {
   }
 
   .menu-item {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .description {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
   }
 
 }

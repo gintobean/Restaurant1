@@ -32,18 +32,20 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#top">Sam's Mediterranean</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+        <span>
+          <i class="navbar-bar fas fa-bars"></i>
+        </span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
+            <a class="nav-link" href="menu.html">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#footer">Hours</a>
+            <a class="nav-link" href="#hours">Hours</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -70,17 +72,17 @@
 
   <section class="bordered" id="menu">
     <div class="menu-cont container-fluid">
-      <h2 class="section-title">Menu</h2>
+      <h2 class="section-title" id="menu-title">Menu</h2>
       <div class="menu-row row">
         <div class="menu-box col-lg-6">
           <a href="menu.html#meat-menu">
-            <img class="meat menu-pic" src="images/meat.jpeg" alt="meat">
+            <img class="bordered-image meat menu-pic" src="images/meat.jpeg" alt="meat">
           </a>
           <h3 class="name">Classic</h3>
         </div>
         <div class="menu-box col-lg-6">
           <a href="menu.html#veg-menu">
-            <img class="veg menu-pic" src="images/veg.jpeg" alt="vegetarian">
+            <img class=" bordered-image veg menu-pic" src="images/veg.jpeg" alt="vegetarian">
           </a>
           <h3 class="name">Vegetarian</h3>
         </div>
@@ -92,6 +94,36 @@
     <img class="bg2" src="images/med2.jpeg" alt="medfood2">
   </div>
 
+  <section class="bordered" id="hours">
+    <div class="hours-container container-fluid">
+      <div class="row">
+        <div class="col-lg-6 hours-wrapper">
+          <h2 class="section-title" id="hours-title">Hours & Location</h2>
+          <h3 class="sub-heading">Hours</h3>
+          <h4 class="sub-subheading">Mon-Fri</h4>
+          <p>7am-9pm</p>
+          <h4 class="sub-subheading">Sat-Sun</h4>
+          <p>8am-10pm</p>
+          <h4 class="sub-heading">
+            <a class="location-link" href="https://goo.gl/maps/97BbYWtdW9x71Px7A">Location &nbsp</a>
+            <i class="location-icon fas fa-map-marker-alt"></i>
+          </h4>
+          <p>301 B St, Davis, CA 95616</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <h4 class="sub-heading">Phone</h4>
+          <p>530-758-2855</p>
+        </div>
+        <div class="col-lg-6 hours-wrapper photo">
+          <img class="bordered-image restaurant-photo" src="images/davis.jpeg" alt="Restaurant">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg3-wrapper">
+    <img class="bg3" src="images/baklava.jpg" alt="Background">
+  </div>
+
   <section class="bordered" id="testemonials">
     <div class="testemonial-container container-fluid">
       <h2 class="title2">Reviews</h2>
@@ -99,38 +131,27 @@
         <p>Don't take our word for it. Here's what the customers said.</p>
       </div>
       <div class="yelp">
-        <!-- <span class="review1 yelp-review" data-review-id="9v19onRBxUo8OJ22T2wTmw" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=_btG1zrdsjXjjWhLBTXY4g" rel="nofollow noopener">Meghann M.</a>'s <a
-            href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis?hrid=9v19onRBxUo8OJ22T2wTmw" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/I2MviWrFablKCIhePw-MjA" rel="nofollow noopener">Sam's Mediterranean
-            Cuisine</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-          <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
-        </span>
-        <span class="review2 yelp-review" data-review-id="ZSjSFKfsCdVIx5fhD36i3g" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=6kLafrMcERCcRXfodRSFEg" rel="nofollow noopener">Jaspreet B.</a>'s <a
-            href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis?hrid=ZSjSFKfsCdVIx5fhD36i3g" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/I2MviWrFablKCIhePw-MjA" rel="nofollow noopener">Sam's Mediterranean
-            Cuisine</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-          <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
-        </span>
-        <span class="review3 yelp-review" data-review-id="9o-_elbJn5WMnq-7H5HH-g" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=dQlTz53zzXFa3UlpCpu-6g" rel="nofollow noopener">Gurmun S.</a>'s <a
-            href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis?hrid=9o-_elbJn5WMnq-7H5HH-g" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/I2MviWrFablKCIhePw-MjA" rel="nofollow noopener">Sam's Mediterranean
-            Cuisine</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-          <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
-        </span> -->
-        <img class= "review1 yelp-review" src="images/review1.png" alt="Review1">
-        <img class= "review2 yelp-review" src="images/review2.png" alt="Review2">
-        <img class= "review3 yelp-review" src="images/review3.png" alt="Review3">
+        <img class="bordered-image review1 yelp-review" src="images/review1.png" alt="Review1">
+        <img class="bordered-image review2 yelp-review" src="images/review2.png" alt="Review2">
+        <img class="bordered-image review3 yelp-review" src="images/review3.png" alt="Review3">
       </div>
     </div>
   </section>
 
   <div class="decor-wrapper">
-      <img class="decor" src="images/decor.jpeg" alt="decor">
+    <img class="decor" src="images/decor.jpeg" alt="decor">
   </div>
 
-  <section class = "bordered" id="footer">
+  <section class="bordered" id="footer">
     <div class="footer-box container-fluid">
       <h2 class="title3">Sam's Mediterranean</h2>
-      <i class="social-icon fab fa-facebook-f"></i>
+      <a href="https://www.facebook.com/Sams-Cuisine-117530438264877/">
+        <i class="social-icon fab fa-facebook-f"></i>
+      </a>
       <i class="social-icon fab fa-twitter"></i>
-      <i class="social-icon fab fa-instagram"></i>
+      <a href="https://www.instagram.com/samscuisine/?hl=en">
+        <i class="social-icon fab fa-instagram"></i>
+      </a>
       <i class="social-icon fas fa-envelope"></i>
       <p class="copyright">© 2021 Sam's Mediterranean Restaurant. All Rights Reserved.</p>
     </div>
