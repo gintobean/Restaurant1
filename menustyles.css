@@ -9,7 +9,7 @@ body {
   background-color: #EEEEEE;
   position: static;
   padding: 10px 10px;
-
+  min-height: 9vh;
 }
 
 .navbar-brand {
@@ -21,13 +21,20 @@ body {
 }
 
 #meat-menu, #veg-menu {
-  padding: 5% 0;
-  text-align: center;
+  padding: 5% 3%;
+}
+
+.menu-item {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .section-title {
   margin: 5% 0;
   font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
 }
 
 .row {
@@ -35,13 +42,35 @@ body {
   display: flex;
 }
 
-
-.underline {
-  border-bottom: 2px solid currentColor;
-  width: 80%;
-  line-height:3;
+.description {
+  font-size: 1.1rem;
 }
 
-.veg-menu {
-  margin: 15% 0;
+
+.underline {
+  align-items: center;
+  border-bottom: 2px solid;
+  border-color: #FFDFAF;
+  line-height:2;
+}
+
+.price {
+  float: right;
+}
+
+/* menu pics */
+.meat-box {
+  margin: 5% 5%;
+  width: 100%;
+}
+
+.pic {
+  margin: 5% 5%;
+  width:35%;
+  border-radius: 2%;
+}
+
+.meat-box, .veg-box {
+  margin: 5% 5%;
+  width: 100%;
 }
