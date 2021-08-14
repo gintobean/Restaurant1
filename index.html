@@ -78,13 +78,17 @@
           <a href="menu.html#meat-menu">
             <img class="bordered-image meat menu-pic" src="images/meat.jpeg" alt="meat">
           </a>
-          <h3 class="name">Classic</h3>
+          <h3 class="name">
+            <a class="unlink" href="menu.html#meat-menu">Classic</a>
+          </h3>
         </div>
         <div class="menu-box col-lg-6">
-          <a href="menu.html#veg-menu">
+          <a href="menu.html#veg-menu"></a>
             <img class=" bordered-image veg menu-pic" src="images/veg.jpeg" alt="vegetarian">
           </a>
-          <h3 class="name">Vegetarian</h3>
+          <h3 class="name">
+            <a class="unlink" href="menu.html#veg-menu">Vegetarian</a>
+          </h3>
         </div>
       </div>
     </div>
@@ -100,18 +104,26 @@
         <div class="col-lg-6 hours-wrapper">
           <h2 class="section-title" id="hours-title">Hours & Location</h2>
           <h3 class="sub-heading">Hours</h3>
-          <h4 class="sub-subheading">Mon-Fri</h4>
-          <p>7am-9pm</p>
-          <h4 class="sub-subheading">Sat-Sun</h4>
-          <p>8am-10pm</p>
+
+          <div class="inner-wrapper">
+            <div class="weekday">
+              <h4 class="sub-subheading">Mon-Fri</h4>
+              <p class="info">7am-9pm</p>
+            </div>
+            <div class="weekend">
+              <h4 class="sub-subheading">Sat-Sun</h4>
+              <p class="info">8am-10pm</p>
+            </div>
+          </div>
+
           <h4 class="sub-heading">
-            <a class="location-link" href="https://goo.gl/maps/97BbYWtdW9x71Px7A">Location &nbsp</a>
+            <a class="unlink location-link" href="https://goo.gl/maps/97BbYWtdW9x71Px7A">Location &nbsp</a>
             <i class="location-icon fas fa-map-marker-alt"></i>
           </h4>
-          <p>301 B St, Davis, CA 95616</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p class="info">301 B St, Davis, CA 95616</p>
+          <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           <h4 class="sub-heading">Phone</h4>
-          <p>530-758-2855</p>
+          <p class="info">530-758-2855</p>
         </div>
         <div class="col-lg-6 hours-wrapper photo">
           <img class="bordered-image restaurant-photo" src="images/davis.jpeg" alt="Restaurant">

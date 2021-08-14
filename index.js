@@ -176,6 +176,21 @@ tl.from(".review1", {
 
 // Image hovering
 
+$(".yelp-review").on("mouseover", function() {
+  gsap.set(this, {zIndex: 100});
+  gsap.to(this, {
+    duration: 0.5,
+    scale: 1.4,
+  });
+});
+$(".yelp-review").on("mouseout", function() {
+  gsap.set(this, {zIndex: 0});
+  gsap.to('.yelp-review', {
+    duration: 0.5,
+    scale: 1
+  });
+});
+
 $(".meat").on("mouseover", function() {
   gsap.to('.meat', {
     duration: 0.5,
