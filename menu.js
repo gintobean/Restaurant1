@@ -1,14 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.from('.navbar', {opacity:0,duration:1});
 gsap.from('.meat-items, .veg-items', {opacity:0,duration:1});
-
-//media queries
-if ($(window).width() < 700) {
-    $('.navbar-brand, .nav-item').addClass('mx-auto');
-}
-else {
-    $('.navbar-brand, .nav-item').removeClass('mx-auto');
-}
 
 //animations
 

@@ -1,29 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
-//media queries
-if ($(window).width() < 700) {
-  $('.navbar-brand, .nav-item').addClass('mx-auto');
-} else {
-  $('.navbar-brand, .nav-item').removeClass('mx-auto');
-}
-
-// var scrollAmount = Math.floor($(this).scrollTop() / 934);
-// $(window).scroll(function() {
-//   console.log(scrollAmount);
-//   if (scrollAmount > 2) {
-//     $('.bg').css("visibility", "hidden");
-//   }
-//   else {
-//     $('.bg').css("visibility ", "visible");
-//   }
-// });
-
 //Starting animations
 
-gsap.from('.navbar', {
-  opacity: 0,
-  duration: 1
-});
 gsap.from('.bg', {
   opacity: 0,
   duration: 1
@@ -35,6 +13,7 @@ gsap.from('.title-content', {
 });
 
 //scrolling animations
+
 gsap.to(".bg", {
   scrollTrigger: {
     trigger: ".bg2",
@@ -140,15 +119,6 @@ gsap.from(".decor-wrapper", {
     scrub: true,
   },
   y: "-50vh"
-});
-
-gsap.from(".footer-box", {
-  scrollTrigger: {
-    trigger: "#footer",
-    toggleActions: "restart pause resume pause"
-  },
-  opacity: 0,
-  duration: 2
 });
 
 //Review Timeline

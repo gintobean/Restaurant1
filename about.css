@@ -1,49 +1,8 @@
-body {
-  font-family: 'Libre Baskerville', serif;
-  background-color: black;
-  color:#EEEEEE;
-}
-
-/* navbar */
-.navbar {
-  background-color: #2d2424;
-  position: relative;
-  padding: 10px 10px;
-  min-height: 9vh;
-}
-
-.navbar-light .navbar-brand {
-  font-size: 1.7rem;
-  color: #eeeeee;
-}
-
-.navbar-light .navbar-brand:hover {
-  color: #f5e6ca;
-}
-
-.nav-item {
-  padding: 0 18px;
-  font-size: 1.5rem;
-}
-
-.nav-link {
-  color: #F5E6CA !important;
-}
-
-.navbar-light .navbar-toggler {
-  border: none;
-  color: #f5e6ca;
-}
-
-.navbar-bar {
-  color: #f5e6ca;
-}
-
 .restaurant-wrapper {
   position: relative;
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   top: 42.5vh;
   overflow: hidden;
 }
@@ -102,21 +61,6 @@ body {
   text-align: center;
 }
 
-.title3 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-}
-
-.social-icon {
-  color: #eeeeee;
-  font-size: 2rem;
-  margin: 50px 20px;
-}
-
-.social-icon:hover {
-  color: #f5e6ca;
-}
-
 .transparent {
   position: relative;
   bottom: -40px;
@@ -126,20 +70,6 @@ body {
 }
 
 @media (max-width: 700px) {
-  .navbar-toggler {
-    width: 100%;
-    float: none;
-    margin-right: 0;
-  }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-
-  .nav-item {
-    padding: 0 18px;
-    font-size: 1.2rem;
-  }
 
   .section-heading, .section-heading2 {
     font-size: 2.2rem;
@@ -148,18 +78,6 @@ body {
   .about-text, .about-text2 {
     font-size: 1.4rem;
     line-height: 1.5;
-  }
-
-  .title3 {
-    font-size: 2.4rem;
-  }
-
-  .social-icon {
-    font-size: 1.7rem;
-  }
-
-  .copyright {
-    font-size: 1rem;
   }
 
   .transparent {

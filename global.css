@@ -1,0 +1,112 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  background-color: black;
+  color: #eeeeee;
+}
+
+/* general */
+.section-title, .title2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #f5e6ca;
+}
+
+.bordered {
+  border-top: 2px #F5E6CA solid;
+  border-bottom: 2px #F5E6CA solid;
+}
+
+.bordered-image {
+  border-radius: 2%;
+  border: 2px solid #F5E6CA;
+}
+
+.unlink {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+.unlink:hover {
+  color: #F5e6ca;
+}
+/* navbar */
+.navbar {
+  background-color: #2d2424;
+  position: sticky;
+  padding: 10px 10px;
+  min-height: 9vh;
+  top:-1px;
+  z-index:1000;
+  border-bottom: 2px solid #f5e6ca;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 1.7rem;
+  color: #eeeeee;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #f5e6ca;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #F5E6CA !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  color: #f5e6ca;
+}
+
+.navbar-bar {
+  color: #f5e6ca;
+}
+
+.title3 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  color: #eeeeee;
+  font-size: 2rem;
+  margin: 50px 20px;
+}
+
+.social-icon:hover {
+  color: #f5e6ca;
+}
+
+@media (max-width: 700px) {
+  .navbar-toggler {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-item {
+    padding: 0 18px;
+    font-size: 1.2rem;
+  }
+
+  .title3 {
+    font-size: 2.4rem;
+  }
+
+  .social-icon {
+    font-size: 1.7rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
+}

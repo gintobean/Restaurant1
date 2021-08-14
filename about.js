@@ -1,13 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.from('.navbar', {opacity:0,duration:1.5});
-
-//media queries
-if ($(window).width() < 700) {
-    $('.navbar-brand, .nav-item').addClass('mx-auto');
-}
-else {
-    $('.navbar-brand, .nav-item').removeClass('mx-auto');
-}
 
 //PARALLAX
 

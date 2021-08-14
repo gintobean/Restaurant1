@@ -1,9 +1,3 @@
-body {
-  font-family: 'Libre Baskerville', serif;
-  background-color: black;
-  color:#EEEEEE;
-}
-
 .bordered {
   border-top: 2px #F5E6CA solid;
   border-bottom: 2px #F5E6CA solid;
@@ -12,41 +6,6 @@ body {
 .bordered-image {
   border-radius: 2%;
   border: 2px solid #F5E6CA;
-}
-
-/* navbar */
-.navbar {
-  background-color: #2d2424;
-  position: relative;
-  padding: 10px 10px;
-  min-height: 9vh;
-}
-
-.navbar-light .navbar-brand {
-  font-size: 1.7rem;
-  color: #eeeeee;
-}
-
-.navbar-light .navbar-brand:hover {
-  color: #f5e6ca;
-}
-
-.nav-item {
-  padding: 0 18px;
-  font-size: 1.5rem;
-}
-
-.nav-link {
-  color: #F5E6CA !important;
-}
-
-.navbar-light .navbar-toggler {
-  border: none;
-  color: #f5e6ca;
-}
-
-.navbar-bar {
-  color: #f5e6ca;
 }
 
 #meat-menu, #veg-menu {
@@ -104,21 +63,15 @@ body {
   width: 100%;
 }
 
+#footer {
+  padding: 10% 5%;
+  color: #EEEEEE;
+  background-color: #2d2424;
+  z-index: -3;
+  text-align: center;
+}
+
 @media (max-width: 700px) {
-  .navbar-toggler {
-    width: 100%;
-    float: none;
-    margin-right: 0;
-  }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-
-  .nav-item {
-    padding: 0 18px;
-    font-size: 1.2rem;
-  }
 
   .section-title {
     font-size: 2.2rem;
@@ -132,4 +85,15 @@ body {
     font-size: 1.0rem;
   }
 
+  .title3 {
+    font-size: 2.4rem;
+  }
+
+  .social-icon {
+    font-size: 1.7rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
 }

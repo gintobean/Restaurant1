@@ -31,9 +31,12 @@ body {
 /* navbar */
 .navbar {
   background-color: #2d2424;
-  position: relative;
+  position: sticky;
   padding: 10px 10px;
   min-height: 9vh;
+  top:-1px;
+  z-index:1000;
+  border-bottom: 2px solid #f5e6ca;
 }
 
 .navbar-light .navbar-brand {
@@ -109,6 +112,7 @@ body {
   padding: 2% 2%;
   margin: 7% 13%;
   justify-content: center;
+  color: #F5e6ca;
 }
 
 .contact-info {
