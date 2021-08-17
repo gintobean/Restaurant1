@@ -16,7 +16,7 @@ $(window).on("scroll", function() {
   var curPosition = $(window).scrollTop();
   // if (curPosition >  parseInt($(window).height())) {
     console.log(position + "," + curPosition);
-    if (position < curPosition) {
+    if (position < curPosition && curPosition > 0) {
       gsap.to(".navbar", {
         y: navHeight,
         duration: 1.3
