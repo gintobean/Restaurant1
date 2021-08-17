@@ -12,16 +12,27 @@ gsap.from('.title-content', {
   y: -50
 });
 
+gsap.from(".bg-wrapper", {
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#top",
+    start: "top top",
+    endTrigger: "#hours",
+    end: "top top",
+    scrub: true
+  },
+  y: "200vh"
+});
 //scrolling animations
 
-gsap.to(".bg", {
-  scrollTrigger: {
-    trigger: ".bg2",
-    start: "bottom bottom",
-    toggleActions: "restart pause resume reverse"
-  },
-  visibility: 'hidden'
-});
+// gsap.to(".bg", {
+//   scrollTrigger: {
+//     trigger: ".bg2",
+//     start: "bottom bottom",
+//     toggleActions: "restart pause resume reverse"
+//   },
+//   visibility: 'hidden'
+// });
 
 gsap.from("#menu-title, .name", {
   scrollTrigger: {

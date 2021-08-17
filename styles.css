@@ -28,67 +28,35 @@ body {
 .unlink:hover {
   color: #F5e6ca;
 }
-/* navbar */
-.navbar {
-  background-color: #2d2424;
-  position: sticky;
-  padding: 10px 10px;
-  min-height: 9vh;
-  top:-1px;
-  z-index:1000;
-  border-bottom: 2px solid #f5e6ca;
-}
-
-.navbar-light .navbar-brand {
-  font-size: 1.7rem;
-  color: #eeeeee;
-}
-
-.navbar-light .navbar-brand:hover {
-  color: #f5e6ca;
-}
-
-.nav-item {
-  padding: 0 18px;
-  font-size: 1.5rem;
-}
-
-.nav-link {
-  color: #F5E6CA !important;
-}
-
-.navbar-light .navbar-toggler {
-  border: none;
-  color: #f5e6ca;
-}
-
-.navbar-bar {
-  color: #f5e6ca;
-}
 
 /* Title */
-.bg-wrapper {
-  z-index: -100;
+.bg3-wrapper {
   width: 100%;
-  min-height: 100vh;
-  position: fixed;
-  overflow:hidden;
+  height: 100vh;
+  position: relative;
+  top: 25vh;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .bg {
   visibility: visible;
   object-fit: cover;
   width: 100%;
-  min-height: 100vh
+  height: 100%;
 }
 
 #top {
+  background-image: url("images/med2.png");
+  background-size: cover;
+  background-attachment: fixed; 
   z-index: -1;
   padding: 5% 0;
   min-height: 100vh;
 }
 
 .title-content {
+  position: relative;
   text-align: center;
   color: #EEEEEE;
 }
@@ -122,6 +90,7 @@ body {
 
 /* Menu */
 #menu, #testemonials, #hours {
+  z-index: 1;
   background-color: #2D2424;
   padding: 10% 5%;
   color: #eeeeee;
@@ -274,21 +243,7 @@ body {
   color: #f5e6ca;
 }
 
-@media (max-width: 700px) {
-  .navbar-toggler {
-    width: 100%;
-    float: none;
-    margin-right: 0;
-  }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-
-  .nav-item {
-    padding: 0 18px;
-    font-size: 1.2rem;
-  }
+@media (max-width: 768px) {
 
   .section-title, .title2 {
     font-size: 2.2rem;

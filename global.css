@@ -31,6 +31,7 @@ body {
   color: #F5e6ca;
 }
 /* navbar */
+
 .navbar {
   background-color: #2d2424;
   position: sticky;
@@ -41,9 +42,14 @@ body {
   border-bottom: 2px solid #f5e6ca;
 }
 
+.nav-container {
+  text-align: center;
+}
+
 .navbar-light .navbar-brand {
   font-size: 1.7rem;
   color: #eeeeee;
+  float: none;
 }
 
 .navbar-light .navbar-brand:hover {
@@ -83,10 +89,10 @@ body {
   color: #f5e6ca;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .navbar-toggler {
-    width: 100%;
     float: none;
+    width: 100%;
     margin-right: 0;
   }
 
