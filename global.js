@@ -1,5 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-
 //media queries
 if ($(window).width() < 700) {
   $('.navbar-brand, .nav-item').addClass('mx-auto');
@@ -9,18 +8,18 @@ if ($(window).width() < 700) {
 
 //navbar animation
 
-var position = $(window).scrollTop();
-var navHeight = -1 * parseInt($(".navbar").css("height"));
+var position = 10000;
+var navHeight = -1 * parseInt($(".navbar").css("height")) - 20;
 console.log(parseInt($(window).height()))
 
 $(window).on("scroll", function() {
   var curPosition = $(window).scrollTop();
-  if (curPosition > parseInt($(window).height())) {
+  if (curPosition >  parseInt($(window).height())) {
     console.log(position + "," + curPosition);
     if (position < curPosition) {
       gsap.to(".navbar", {
         y: navHeight,
-        duration: 1
+        duration: 1.3
       });
     } else {
       gsap.to(".navbar", {
