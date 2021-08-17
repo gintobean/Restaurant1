@@ -30,11 +30,11 @@ body {
 }
 
 /* Title */
-.bg3-wrapper {
+.bg-wrapper {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  top: 25vh;
+  height: 105%;
+  top: 190vh;
+  position: absolute;
   z-index: -1;
   overflow: hidden;
 }
@@ -47,12 +47,10 @@ body {
 }
 
 #top {
-  background-image: url("images/med2.png");
-  background-size: cover;
-  background-attachment: fixed; 
   z-index: -1;
   padding: 5% 0;
   min-height: 100vh;
+  position: relative;
 }
 
 .title-content {

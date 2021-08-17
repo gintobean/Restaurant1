@@ -21,8 +21,9 @@ gsap.from(".bg-wrapper", {
     end: "top top",
     scrub: true
   },
-  y: "200vh"
+  y: "-200vh"
 });
+
 //scrolling animations
 
 // gsap.to(".bg", {
