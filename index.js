@@ -60,7 +60,7 @@ if ($(window).width() > 767) {
       toggleActions: "restart pause resume pause"
     },
     opacity: 0,
-    duration: 1
+    duration: 2
   });
 }
 
@@ -73,6 +73,16 @@ if ($(window).width() > 767) {
     opacity: 0,
     x: 50,
     duration: 1
+  });
+}
+else {
+  gsap.from(".veg", {
+    scrollTrigger: {
+      trigger: ".veg",
+      toggleActions: "restart pause resume pause"
+    },
+    opacity: 0,
+    duration: 2
   });
 }
 
