@@ -29,7 +29,7 @@ gsap.from("#menu-title, .name", {
     toggleActions: "restart pause resume pause"
   },
   opacity: 0,
-  y: 50,
+  // y:50,
   duration: 2
 });
 
@@ -39,39 +39,64 @@ gsap.from(".hours-container", {
     toggleActions: "restart pause resume pause"
   },
   opacity: 0,
-  y: 50,
+  // y: 50,
   duration: 2
 });
 
-gsap.from(".meat", {
-  scrollTrigger: {
-    trigger: ".meat",
-    toggleActions: "restart pause resume pause"
-  },
-  opacity: 0,
-  x: -100,
-  duration: 1
-});
+if ($(window).width() > 767) {
+  gsap.from(".meat", {
+    scrollTrigger: {
+      trigger: ".meat",
+      toggleActions: "restart pause resume pause"
+    },
+    opacity: 0,
+    x: -50,
+    duration: 1
+  });
+} else {
+  gsap.from(".meat", {
+    scrollTrigger: {
+      trigger: ".meat",
+      toggleActions: "restart pause resume pause"
+    },
+    opacity: 0,
+    duration: 1
+  });
+}
 
-gsap.from(".veg", {
-  scrollTrigger: {
-    trigger: ".veg",
-    toggleActions: "restart pause resume pause"
-  },
-  opacity: 0,
-  x: 100,
-  duration: 1
-});
+if ($(window).width() > 767) {
+  gsap.from(".veg", {
+    scrollTrigger: {
+      trigger: ".veg",
+      toggleActions: "restart pause resume pause"
+    },
+    opacity: 0,
+    x: 50,
+    duration: 1
+  });
+}
 
-gsap.from(".restaurant-photo", {
-  scrollTrigger: {
-    trigger: ".restaurant-photo",
-    toggleActions: "restart pause resume pause"
-  },
-  opacity: 0,
-  x: 100,
-  duration: 1
-});
+if ($(window).width() > 767) {
+  gsap.from(".restaurant-photo", {
+    scrollTrigger: {
+      trigger: ".restaurant-photo",
+      toggleActions: "restart pause resume pause"
+    },
+    opacity: 0,
+    x: 50,
+    duration: 1
+  });
+}
+else {
+  gsap.from(".restaurant-photo", {
+    scrollTrigger: {
+      trigger: ".restaurant-photo",
+      toggleActions: "restart pause resume pause"
+    },
+    opacity: 0,
+    duration: 1
+  });
+}
 
 gsap.from(".bg2-wrapper", {
   ease: "none",
@@ -104,7 +129,7 @@ gsap.from(".title2, .testemonial-body", {
     toggleActions: "restart pause resume pause"
   },
   opacity: 0,
-  y: 50,
+  // y: 50,
   duration: 2
 });
 
@@ -128,33 +153,54 @@ let tl = gsap.timeline({
     toggleActions: "restart pause resume pause"
   }
 });
+
+if ($(window).width() > 767) {
 tl.from(".review1", {
     opacity: 0,
-    x: -100,
+    x: -50,
     duration: 1
   }, "-=0.5")
   .from(".review2", {
     opacity: 0,
-    x: 100,
+    x: 50,
     duration: 1
   }, "-=0.5")
   .from(".review3", {
     opacity: 0,
-    x: -100,
+    x: -50,
     duration: 1
   }, "-=0.5");
+}
+else {
+  tl.from(".review1", {
+      opacity: 0,
+      duration: 1
+    }, "-=0.5")
+    .from(".review2", {
+      opacity: 0,
+      duration: 1
+    }, "-=0.5")
+    .from(".review3", {
+      opacity: 0,
+      duration: 1
+    }, "-=0.5");
+}
 
 // Image hovering
 
 $(".yelp-review").on("mouseover", function() {
-  gsap.set(this, {zIndex: 100});
+  gsap.set(this, {
+    zIndex: 100
+  });
   gsap.to(this, {
     duration: 0.5,
     scale: 1.4,
   });
 });
 $(".yelp-review").on("mouseout", function() {
-  gsap.set(this, {zIndex: 0});
+  gsap.set(this, {
+    zIndex: 0
+  });
   gsap.to('.yelp-review', {
     duration: 0.5,
     scale: 1
