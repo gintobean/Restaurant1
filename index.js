@@ -161,9 +161,22 @@ gsap.from(".decor-wrapper", {
 
     trigger: "#testemonials",
     start: "bottom bottom",
+    endTrigger: "#gallery",
+    end: "top top",
+    scrub: true,
+  },
+  y: "-50vh"
+});
+
+gsap.from(".bg5-wrapper", {
+  ease: "none",
+  scrollTrigger: {
+
+    trigger: "#gallery",
+    start: "bottom bottom",
     endTrigger: "#footer",
     end: "bottom bottom",
-    scrub: true,
+    scrub: true
   },
   y: "-50vh"
 });
