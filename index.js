@@ -26,15 +26,6 @@ gsap.from(".bg-wrapper", {
 
 //scrolling animations
 
-// gsap.to(".bg", {
-//   scrollTrigger: {
-//     trigger: ".bg2",
-//     start: "bottom bottom",
-//     toggleActions: "restart pause resume reverse"
-//   },
-//   visibility: 'hidden'
-// });
-
 gsap.from("#menu-title, .name", {
   scrollTrigger: {
     trigger: "#menu",
@@ -51,7 +42,15 @@ gsap.from(".hours-container", {
     toggleActions: "restart pause resume pause"
   },
   opacity: 0,
-  // y: 50,
+  duration: 2
+});
+
+gsap.from(".gallery-pic-row, .title4", {
+  scrollTrigger: {
+    trigger: "#gallery",
+    toggleActions: "restart pause resume pause"
+  },
+  opacity: 0,
   duration: 2
 });
 
@@ -151,7 +150,6 @@ gsap.from(".title2, .testemonial-body", {
     toggleActions: "restart pause resume pause"
   },
   opacity: 0,
-  // y: 50,
   duration: 2
 });
 
@@ -267,3 +265,46 @@ $(".veg").on("mouseout", function() {
     scale: 1
   });
 });
+
+$(".top").on("mouseover", function() {
+  gsap.to(this , {
+    duration: 0.5,
+    scale: 1.05
+  });
+  //$(this).addClass("caption");
+});
+$(".top").on("mouseout", function() {
+  gsap.to(this , {
+    duration: 0.5,
+    scale: 1
+  });
+  //$(this).removeClass("caption");
+});
+
+$(".top").hover(
+  function () {
+    animateIt($(this).children(".bottom")).play();
+  },
+  function () {
+    animateItReverse($(this).children(".bottom")).play();
+  }
+);
+
+function animateIt(obj) {
+  var tween = gsap.to(obj, {
+    ease: "power1.in",
+    duration: 1,
+    y: "-12vh"
+  });
+  tween.reversed(!tween.reversed());
+  return tween;
+}
+
+function animateItReverse(obj) {
+  var tween = gsap.to(obj, {
+    ease: "power1.out",
+    duration: 2,
+    y: "12vh"
+  });
+  return tween;
+}

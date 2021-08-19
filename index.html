@@ -9,11 +9,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
 
   <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-  <!-- font-Awesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,34 +25,34 @@
 <body>
 
   <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="nav-container container-fluid">
-        <a class="navbar-brand" href="#top">Sam's Mediterranean</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
-          <span>
-            <i class="navbar-bar fas fa-bars"></i>
-          </span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="nav-container container-fluid">
+      <a class="navbar-brand" href="#top">Sam's Mediterranean</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+        <span>
+          <i class="navbar-bar fas fa-bars"></i>
+        </span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#hours">Hours</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hours">Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
   <!-- main section -->
 
@@ -66,8 +62,19 @@
     </div>
     <div class="title-content">
       <h1 class="big-title"><span>Classic Mediterranean cuisine</span> <span> with a modern twist. </span></h1>
-      <p class="sub-title">All made with locally sourced ingredients.</p>
-      <a class="cta btn btn-outline-light" href="#menu" role="button">Our Menu</a>
+      <p class="sub-title">Serving the Davis community since 1995.</p>
+      <a class="cta btn btn-outline-light" href="menu.html" role="button">Our Menu</a>
+      <div class="socials">
+        <a href="https://www.facebook.com/Sams-Cuisine-117530438264877/">
+          <i class="social-icon-lg fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis">
+          <i class="social-icon-lg fab fa-yelp fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/samscuisine/?hl=en">
+          <i class="social-icon-lg fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
       <div class="contact-info">
         <p>301 B St, Davis, CA 95616</p>
         <p>530-758-2855</p>
@@ -142,14 +149,56 @@
   </div>
 
   <section class="bordered" id="testemonials">
-    <div class="testemonial-container container-fluid">
-      <h2 class="title2">Reviews</h2>
-      <div class="testemonial-body">
-        <p>Don't take our word for it. Here's what the customers said.</p>
+
+    <h2 class="title2">Reviews</h2>
+    <div class="testemonial-body">
+      <p>Don't take our word for it. Here's what the customers said.</p>
+    </div>
+
+    <div id="review-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <span class="yelp-review" data-review-id="9v19onRBxUo8OJ22T2wTmw" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=_btG1zrdsjXjjWhLBTXY4g" rel="nofollow noopener">Meghann M.</a>'s <a
+              href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis?hrid=9v19onRBxUo8OJ22T2wTmw" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/I2MviWrFablKCIhePw-MjA" rel="nofollow noopener">Sam's Mediterranean
+              Cuisine</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+            <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
+          </span>
+        </div>
+        <div class="carousel-item">
+          <span class="yelp-review" data-review-id="ZSjSFKfsCdVIx5fhD36i3g" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=6kLafrMcERCcRXfodRSFEg" rel="nofollow noopener">Jaspreet B.</a>'s <a
+              href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis?hrid=ZSjSFKfsCdVIx5fhD36i3g" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/I2MviWrFablKCIhePw-MjA" rel="nofollow noopener">Sam's Mediterranean
+              Cuisine</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+            <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
+          </span>
+        </div>
+        <div class="carousel-item">
+          <span class="yelp-review" data-review-id="oKNdye46Zt4PezRm2Sh6cw" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=QAB-ET9c6Lh4nzx3B0HS5w" rel="nofollow noopener">Iris T.</a>'s <a
+              href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis?hrid=oKNdye46Zt4PezRm2Sh6cw" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/I2MviWrFablKCIhePw-MjA" rel="nofollow noopener">Sam's Mediterranean
+              Cuisine</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+            <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
+          </span>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#review-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- <div class="testemonial-container container-fluid">
+
       <div class="yelp">
         <a href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis?hrid=oKNdye46Zt4PezRm2Sh6cw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">
-            <img class="bordered-image review1 yelp-review" src="images/review1.png" alt="Review1">
+          <img class="bordered-image review1 yelp-review" src="images/review1.png" alt="Review1">
         </a>
         <a href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis?hrid=9v19onRBxUo8OJ22T2wTmw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">
           <img class="bordered-image review2 yelp-review" src="images/review2.png" alt="Review2">
@@ -158,7 +207,8 @@
           <img class="bordered-image review3 yelp-review" src="images/review3.png" alt="Review3">
         </a>
       </div>
-    </div>
+    </div> -->
+
   </section>
 
   <div class="decor-wrapper">
@@ -167,55 +217,135 @@
 
   <section class="bordered" id="gallery">
     <div class="container-fluid">
-      <h2 class= "section-title title4">Gallery</h2>
+      <h2 class="section-title title4">Gallery</h2>
       <div class="gallery-pic-row row">
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image gallery-pic" src="yelp-images/1.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/1.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Falafel, a vegetarian favorite</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image gallery-pic" src="yelp-images/2.jpeg" alt="pic">
-        </div>
-        <div class="gallery-col gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image bordered-image bordered-image bordered-image bordered-image gallery-pic" src="yelp-images/3.jpeg" alt="pic">
-        </div>
-        <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image bordered-image bordered-image bordered-image gallery-pic" src="yelp-images/4.jpeg" alt="pic">
-        </div>
-        <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image bordered-image bordered-image gallery-pic" src="yelp-images/5.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/2.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Beef Shawarma with pita</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image bordered-image gallery-pic" src="yelp-images/6.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/3.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">A delicious pita wrap</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image gallery-pic" src="yelp-images/7.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/4.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">The restaurant, c. 2018</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image gallery-pic" src="yelp-images/8.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/5.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">A feast at Sam's</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image bordered-image bordered-image gallery-pic" src="yelp-images/9.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/6.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">The traditionally styled interior</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image bordered-image gallery-pic" src="yelp-images/10.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/7.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Sam and a loyal customer</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image gallery-pic" src="yelp-images/11.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/8.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Chicken Shawarma with pita</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image gallery-pic" src="yelp-images/12.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/9.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Shawarma over rice, a customer favorite</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image bordered-image bordered-image gallery-pic" src="yelp-images/13.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/10.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Hard at work!</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image bordered-image gallery-pic" src="yelp-images/14.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/11.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Beautifully presented Shawarma bowls</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image bordered-image gallery-pic" src="yelp-images/15.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/12.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Handwritten menus with an arttistic flair.</p>
+            </div>
+          </div>
         </div>
         <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
-          <img class="bordered-image gallery-pic" src="yelp-images/16.jpeg" alt="pic">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/13.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Beef Shawarma drizzled in yogurt sauce</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/14.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">A customer enjoying Shawarma outside</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/15.jpeg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Sam and his Squad!</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-col col-lg-3 col-md-4 col-sm-6">
+          <div class="top">
+            <img class="bordered-image gallery-pic" src="yelp-images/16.jpg" alt="pic">
+            <div class="bottom">
+              <p class="txt">Pita Burger with fries on the side</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -231,18 +361,22 @@
       <a href="https://www.facebook.com/Sams-Cuisine-117530438264877/">
         <i class="social-icon fab fa-facebook-f"></i>
       </a>
-      <i class="social-icon fab fa-twitter"></i>
+      <a href="https://www.yelp.com/biz/sams-mediterranean-cuisine-davis">
+        <i class="social-icon fab fa-yelp"></i>
+      </a>
       <a href="https://www.instagram.com/samscuisine/?hl=en">
         <i class="social-icon fab fa-instagram"></i>
       </a>
-      <i class="social-icon fas fa-envelope"></i>
       <p class="copyright">© 2021 Sam's Mediterranean Restaurant. All Rights Reserved.</p>
     </div>
   </section>
 
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
   <script src="index.js" charset="utf-8"></script>
   <script src="global.js" charset="utf-8"></script>
 
