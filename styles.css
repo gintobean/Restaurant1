@@ -210,8 +210,11 @@ body {
   color: #C8C2BC;
 }
 
-.carousel-item {
-  
+.yelp-review {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 10% auto;
 }
 
 /* gallery */
