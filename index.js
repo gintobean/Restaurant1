@@ -45,14 +45,25 @@ gsap.from(".hours-container", {
   duration: 2
 });
 
-gsap.from(".gallery-pic-row, .title4", {
+gsap.from(".gallery-pic, .title4", {
   scrollTrigger: {
     trigger: "#gallery",
     toggleActions: "restart pause resume pause"
   },
   opacity: 0,
-  duration: 2
+  duration: 2,
 });
+
+// var tl = gsap.timeline();
+// $(".gallery-pic").each(function () {
+//   tl.from(this, {
+//     scrollTrigger: {
+//       toggleActions: "restart pause resume pause"
+//     },
+//     opacity: 0.8,
+//     duration: 0.1
+//   });
+// });
 
 if ($(window).width() > 767) {
   gsap.from(".meat", {
@@ -169,7 +180,6 @@ gsap.from(".decor-wrapper", {
 gsap.from(".bg5-wrapper", {
   ease: "none",
   scrollTrigger: {
-
     trigger: "#gallery",
     start: "bottom bottom",
     endTrigger: "#footer",
@@ -180,44 +190,44 @@ gsap.from(".bg5-wrapper", {
 });
 
 //Review Timeline
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".yelp",
-    toggleActions: "restart pause resume pause"
-  }
-});
-
-if ($(window).width() > 767) {
-tl.from(".review1", {
-    opacity: 0,
-    x: -50,
-    duration: 1
-  }, "-=0.5")
-  .from(".review2", {
-    opacity: 0,
-    x: 50,
-    duration: 1
-  }, "-=0.5")
-  .from(".review3", {
-    opacity: 0,
-    x: -50,
-    duration: 1
-  }, "-=0.5");
-}
-else {
-  tl.from(".review1", {
-      opacity: 0,
-      duration: 1
-    }, "-=0.5")
-    .from(".review2", {
-      opacity: 0,
-      duration: 1
-    }, "-=0.5")
-    .from(".review3", {
-      opacity: 0,
-      duration: 1
-    }, "-=0.5");
-}
+// let tl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".yelp",
+//     toggleActions: "restart pause resume pause"
+//   }
+// });
+//
+// if ($(window).width() > 767) {
+// tl.from(".review1", {
+//     opacity: 0,
+//     x: -50,
+//     duration: 1
+//   }, "-=0.5")
+//   .from(".review2", {
+//     opacity: 0,
+//     x: 50,
+//     duration: 1
+//   }, "-=0.5")
+//   .from(".review3", {
+//     opacity: 0,
+//     x: -50,
+//     duration: 1
+//   }, "-=0.5");
+// }
+// else {
+//   tl.from(".review1", {
+//       opacity: 0,
+//       duration: 1
+//     }, "-=0.5")
+//     .from(".review2", {
+//       opacity: 0,
+//       duration: 1
+//     }, "-=0.5")
+//     .from(".review3", {
+//       opacity: 0,
+//       duration: 1
+//     }, "-=0.5");
+// }
 
 // Image hovering
 
@@ -266,45 +276,31 @@ $(".veg").on("mouseout", function() {
   });
 });
 
-$(".top").on("mouseover", function() {
-  gsap.to(this , {
-    duration: 0.5,
-    scale: 1.05
-  });
-  //$(this).addClass("caption");
-});
-$(".top").on("mouseout", function() {
-  gsap.to(this , {
-    duration: 0.5,
-    scale: 1
-  });
-  //$(this).removeClass("caption");
-});
-
 $(".top").hover(
   function () {
-    animateIt($(this).children(".bottom")).play();
+    gsap.to(this , {
+      duration: 0.5,
+      scale: 1.05
+    });
+    var target = $(this).children(".bottom");
+    gsap.set(target, {className: "bottom activated"});
+    var tween = gsap.to(".activated", {
+      ease: "power2.in",
+      duration: 0.75,
+      y: "-12vh"
+    });
   },
   function () {
-    animateItReverse($(this).children(".bottom")).play();
+    gsap.to(this , {
+      duration: 0.5,
+      scale: 1
+    });
+    var target = $(this).children(".bottom");
+    gsap.set(target, {className: "bottom -=activated"});
+    var tween = gsap.to(target, {
+      ease: "power2.in",
+      duration: 0.75,
+      y: "12vh"
+    });
   }
 );
-
-function animateIt(obj) {
-  var tween = gsap.to(obj, {
-    ease: "power1.in",
-    duration: 1,
-    y: "-12vh"
-  });
-  tween.reversed(!tween.reversed());
-  return tween;
-}
-
-function animateItReverse(obj) {
-  var tween = gsap.to(obj, {
-    ease: "power1.out",
-    duration: 2,
-    y: "12vh"
-  });
-  return tween;
-}

@@ -10,12 +10,10 @@ if ($(window).width() < 700) {
 
 var position = 10000;
 var navHeight = -1 * parseInt($(".navbar").css("height")) - 20;
-console.log(parseInt($(window).height()))
 
 $(window).on("scroll", function() {
   var curPosition = $(window).scrollTop();
   // if (curPosition >  parseInt($(window).height())) {
-    console.log(position + "," + curPosition);
     if (position < curPosition && curPosition > 0) {
       gsap.to(".navbar", {
         y: navHeight,
