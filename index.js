@@ -287,7 +287,7 @@ $(".top").hover(
     var tween = gsap.to(".activated", {
       ease: "power2.in",
       duration: 0.75,
-      y: "-12vh"
+      y: "-15vh"
     });
   },
   function () {
@@ -300,7 +300,7 @@ $(".top").hover(
     var tween = gsap.to(target, {
       ease: "power2.in",
       duration: 0.75,
-      y: "12vh"
+      y: "15vh"
     });
   }
 );
