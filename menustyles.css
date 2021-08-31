@@ -12,9 +12,18 @@
   padding: 5% 3%;
 }
 
+.type {
+  margin: 5% auto;
+  color: #f5e6ca;
+  font-weight: 900;
+}
+
+.type-box {
+  padding: 2% 5%;
+}
 .menu-item {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 

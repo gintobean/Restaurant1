@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* general */
 .section-title, .title2 {
   text-align: center;
@@ -101,9 +105,10 @@ body {
 /* Menu */
 #menu, #testemonials, #hours, #gallery {
   z-index: 1;
-  background-color: #2D2424;
+  background-color: #2d2424;
+  /* background-color: ;#e8dfc2 */
   padding: 10% 5%;
-  color: #eeeeee;
+  color: #f5e6ca;
   min-height: 100vh;
 }
 
@@ -231,6 +236,10 @@ body {
   overflow: hidden;
 }
 
+.gallery-col {
+  /* display: flex; */
+}
+
 .gallery-pic {
   display: inline-block;
   width: 100%;
@@ -238,6 +247,7 @@ body {
   object-fit: cover;
   border-radius: 2%;
   text-align: center;
+  margin: 0 auto;
 }
 
 .title4 {
@@ -264,8 +274,8 @@ body {
   /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(45,36,36,0.9) 10%); */
   background-color: rgb(45,36,36,0.8);
   width: 100%;
-  height: 12vh;
-  bottom: -12vh;
+  height: 15vh;
+  bottom: -15vh;
   text-align: center;
   padding: 5% 5%;
 }
