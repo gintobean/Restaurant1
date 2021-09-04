@@ -68,7 +68,7 @@ a {
   font-weight: 500;
   font-size: 4rem;
   display: block;
-  margin: 10% 13%;
+  margin: 15% 13% 3%;
 }
 
 .sub-title {
@@ -322,9 +322,12 @@ a {
     font-weight: 500;
     font-size: 2.4rem;
     display: inline-block;
-    margin: 10% 10%;
+    margin: 20% 10% 10%;
   }
 
+  .bg-wrapper {
+    height: 110vh;
+  }
   .sub-title {
     font-size: 1.5rem;
     display: block;

@@ -38,7 +38,8 @@ html {
 
 .navbar {
   background-color: #2d2424;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   padding: 10px 10px;
   min-height: 9vh;
   top:-1px;
