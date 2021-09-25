@@ -8,7 +8,7 @@ let tl = gsap.timeline({scrollTrigger: {
   toggleActions: "restart pause resume restart"
 }})
 
-for (var i = 1; i <=4; i++) {
+for (var i = 1; i <5; i++) {
   tl.from(".pic" + i, {opacity:0, duration:3}, "-=2.5");
 }
 
