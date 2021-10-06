@@ -250,6 +250,14 @@ a {
 }
 
 /* gallery */
+
+.tour {
+  width: 100%;
+  margin: 2%;
+  height: 90vh;
+  min-height: 700px;
+}
+
 .bg5-wrapper {
   width: 100%;
   height: 100vh;

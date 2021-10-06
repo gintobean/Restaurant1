@@ -38,9 +38,9 @@
 .mission-wrapper {
   position: relative;
   z-index: -1;
-  top: 25vh;
+  top: 24.5vh;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
 }
 
